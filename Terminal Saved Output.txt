@@ -1,0 +1,202 @@
+Last login: Tue Apr  9 18:13:54 on ttys000
+-bash: /Users/acharya/.local/share/colcon_argcomplete/hook/colcon-argcomplete.bash: No such file or directory
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+OMs-MacBook-Pro:EPPL acharya$ git clone https://github.com/OmAcharya-avtr/Sample_CubeSat.git
+Cloning into 'Sample_CubeSat'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+OMs-MacBook-Pro:EPPL acharya$ ls
+Sample_CubeSat
+OMs-MacBook-Pro:EPPL acharya$ cd Sample_CubeSat/
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git add --all
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git commit -m 'initial update'
+[main d5188ea] initial update
+ Committer: OM Acharya <acharya@OMs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git push -a
+error: unknown switch `a'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git push -f
+Username for 'https://github.com': ^C
+OMs-MacBook-Pro:Sample_CubeSat acharya$     git config --global user.name "Your Name"
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git config --global user.name "OmAcharya-avtr"
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git config --global user.password "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"
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git push -f
+Username for 'https://github.com': OmAcharya-avtr
+Password for 'https://OmAcharya-avtr@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 631 bytes | 631.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/OmAcharya-avtr/Sample_CubeSat.git
+   2080a79..d5188ea  main -> main
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md	examples
+OMs-MacBook-Pro:Sample_CubeSat acharya$ cd examples/
+OMs-MacBook-Pro:examples acharya$ nano run.py
+OMs-MacBook-Pro:examples acharya$ git add --all 
+OMs-MacBook-Pro:examples acharya$ git commit -m 'updated'
+[main c11ea00] updated
+ Committer: OmAcharya-avtr <acharya@OMs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+ create mode 100644 examples/run.py
+OMs-MacBook-Pro:examples acharya$ git congfig -list
+git: 'congfig' is not a git command. See 'git --help'.
+
+The most similar command is
+	config
+OMs-MacBook-Pro:examples acharya$ git congfig --list
+git: 'congfig' is not a git command. See 'git --help'.
+
+The most similar command is
+	config
+OMs-MacBook-Pro:examples acharya$ git congfig list 
+git: 'congfig' is not a git command. See 'git --help'.
+
+The most similar command is
+	config
+OMs-MacBook-Pro:examples acharya$ git config --list 
+credential.helper=osxkeychain
+init.defaultbranch=main
+user.name=OmAcharya-avtr
+user.password=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
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://github.com/OmAcharya-avtr/Sample_CubeSat.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+OMs-MacBook-Pro:examples acharya$ git push -f
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 357 bytes | 357.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/OmAcharya-avtr/Sample_CubeSat.git
+   d5188ea..c11ea00  main -> main
+OMs-MacBook-Pro:examples acharya$ ls
+run.py
+OMs-MacBook-Pro:examples acharya$ cd ../
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md	examples
+OMs-MacBook-Pro:Sample_CubeSat acharya$ cd examples/
+OMs-MacBook-Pro:examples acharya$ ls
+run.py
+OMs-MacBook-Pro:examples acharya$ cd ../
+OMs-MacBook-Pro:Sample_CubeSat acharya$ rmdir examples/
+rmdir: examples/: Directory not empty
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md	examples
+OMs-MacBook-Pro:Sample_CubeSat acharya$ cd examples/
+OMs-MacBook-Pro:examples acharya$ rm run.py 
+OMs-MacBook-Pro:examples acharya$ cd ../
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md	examples
+OMs-MacBook-Pro:Sample_CubeSat acharya$ rmdir examples/
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git add --all
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git commit -m 'Removed examples directory'
+[main 4dce705] Removed examples directory
+ Committer: OmAcharya-avtr <acharya@OMs-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 deletions(-)
+ delete mode 100644 examples/run.py
+OMs-MacBook-Pro:Sample_CubeSat acharya$ git push -f
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/OmAcharya-avtr/Sample_CubeSat.git
+   c11ea00..4dce705  main -> main
+OMs-MacBook-Pro:Sample_CubeSat acharya$ nano hi.txt
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md	hi.txt
+OMs-MacBook-Pro:Sample_CubeSat acharya$ rm hi.txt 
+OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
+LICENSE		README.md
+OMs-MacBook-Pro:Sample_CubeSat acharya$ 

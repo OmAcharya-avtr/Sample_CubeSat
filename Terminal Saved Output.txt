@@ -199,4 +199,5 @@ LICENSE		README.md	hi.txt
 OMs-MacBook-Pro:Sample_CubeSat acharya$ rm hi.txt 
 OMs-MacBook-Pro:Sample_CubeSat acharya$ ls
 LICENSE		README.md
-OMs-MacBook-Pro:Sample_CubeSat acharya$ 
+OMs-MacBook-Pro:Sample_CubeSat acharya$ cd
+
